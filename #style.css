@@ -1,0 +1,174 @@
+
+
+
+ /* 1. Global Reset & Variables */
+:root {
+    --primary-blue: #0044cc;
+    --dark-bg: #1a1a1a;
+    --light-gray: #f4f4f4;
+    --text-dark : #333;
+    --white : #ffffff;
+    --font-main:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* 2. Navigation */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    background: #000;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo { font-weight: bold; font-size: 1.5rem; }
+
+nav ul { display: flex; list-style: none; }
+
+nav ul li { margin: 0 15px; }
+
+nav ul li a { color: white; text-decoration: none; font-size: 0.9rem; }
+
+/* 3. Hero Section */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-bg.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    color: white;
+}
+
+.hero h1 { font-size: 3rem; max-width: 600px; margin-bottom: 20px; }
+
+.btn-container { display: flex; gap: 15px; }
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-primary { background: var(--primary-blue); color: white; }
+.btn-outline { background: transparent; border: 1px solid white; color: white; }
+
+/* 4. About Section */
+.about {
+    padding: 80px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-img img { width: 100%; border-radius: 8px; filter: grayscale(100%); }
+
+.about-info h2 { font-size: 2rem; color: var(--primary-blue); margin-bottom: 15px; }
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+
+/* 5. Services Section */
+.services {
+    padding: 80px 10%;
+    background: var(--light-gray);
+    text-align: center;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover { transform: translateY(-10px); border: 2px solid var(--primary-blue); }
+
+.card i { font-size: 2rem; color: var(--primary-blue); margin-bottom: 20px; }
+
+/* 6. Testimonials & Contact Form */
+.contact-section {
+    padding: 80px 10%;
+    background: var(--primary-blue);
+    color: white;
+    text-align: center;
+}
+
+.contact-form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: -50px auto 0; /* Overlap effect */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    color: var(--text-dark);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea { height: 120px; }
+
+/* 7. Footer */
+footer {
+    background: var(--dark-bg);
+    color: white;
+    padding: 60px 10% 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 40px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 40px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.8rem;
+    color: #888;
+}

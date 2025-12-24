@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sana | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('portfolio.jpeg2');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+
+    <nav class="flex justify-between items-center px-10 py-5 bg-black text-white sticky top-0 z-50">
+        <div class="text-2xl font-bold flex items-center gap-2">
+            <span class="bg-blue-600 px-2 py-1 rounded">S</span> Sana
+        </div>
+        <ul class="flex gap-8 text-sm uppercase tracking-widest">
+            <li><a href="#" class="hover:text-blue-500">Home</a></li>
+            <li><a href="#about" class="hover:text-blue-500">About</a></li>
+            <li><a href="#services" class="hover:text-blue-500">Services</a></li>
+            <li><a href="#testimonial" class="hover:text-blue-500">Testimonial</a></li>
+            <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-bg h-screen flex flex-col justify-center px-20 text-white">
+        <h1 class="text-5xl font-bold max-w-2xl leading-tight">
+            Passionate Network Engineer & Cyber Security Enthusiast.
+        </h1>
+        <div class="mt-8 flex gap-4">
+            <button class="bg-blue-600 px-8 py-3 rounded-sm font-semibold">Discover</button>
+            <button class="border border-white px-8 py-3 rounded-sm font-semibold hover:bg-white hover:text-black transition">Contact</button>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 px-10 max-w-6xl mx-auto">
+        <p class="text-blue-600 font-bold text-center mb-2">About</p>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <img src="portfolio.jpeg" alt="Sa" class="rounded shadow-lg bg-gray-200">
+            <div>
+                <h2 class="text-4xl font-bold mb-4 text-blue-800">Hi there I'm Sana</h2>
+                <p class="text-gray-600 mb-6">I am Sana a student of IMSC IT</p>
+                <div class="grid grid-cols-2 gap-y-4">
+                    <p><strong>Birthday:</strong> 6 January 2008</p>
+                    <p><strong>Age:</strong> 17</p>
+                    <p><strong>Website:</strong> www.sana.com</p>
+                    <p><strong>Degree:</strong> Bachelors</p>
+                    <p><strong>Phone:</strong> +91 9974597011</p>
+                    <p><strong>Email:</strong> sanalohia06@gmail.com</p>
+                    <p><strong>City:</strong> Ahmedabad</p>
+                    <p><strong>Freelance:</strong> Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-gray-50 py-20 px-10 text-center">
+        <p class="text-blue-600 font-bold mb-2">Services</p>
+        <h2 class="text-4xl font-bold mb-12">We provide the best services</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="p-8 bg-white shadow-md border-t-4 border-transparent hover:border-blue-600 transition">
+                <i class="fa-solid fa-network-wired text-4xl text-blue-700 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Networking</h3>
+                <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, incidunt?</p>
+            </div>
+            <div class="p-8 bg-white shadow-xl border-t-4 border-blue-600 transform scale-105">
+                <i class="fa-solid fa-code text-4xl text-blue-700 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Programming</h3>
+                <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, incidunt?</p>
+            </div>
+            <div class="p-8 bg-white shadow-md border-t-4 border-transparent hover:border-blue-600 transition">
+                <i class="fa-solid fa-shield-halved text-4xl text-blue-700 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Cyber Security</h3>
+                <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, incidunt?</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-blue-800 py-20 px-10">
+        <div class="max-w-4xl mx-auto text-center text-white mb-10">
+            <p class="uppercase tracking-widest text-sm mb-2">Contact</p>
+            <h2 class="text-4xl font-bold">What do you have in mind?</h2>
+        </div>
+        <div class="max-w-2xl mx-auto bg-white p-10 rounded-lg shadow-2xl">
+            <form class="grid grid-cols-2 gap-6">
+                <input type="text" placeholder="First Name" class="border p-3 rounded">
+                <input type="text" placeholder="Last Name" class="border p-3 rounded">
+                <input type="email" placeholder="Email" class="border p-3 rounded">
+                <input type="text" placeholder="Mobile Number" class="border p-3 rounded">
+                <textarea placeholder="Enter your message" class="col-span-2 border p-3 rounded h-32"></textarea>
+                <button class="col-span-2 bg-blue-800 text-white py-3 rounded font-bold hover:bg-blue-900">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-zinc-900 text-white py-12 px-10">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+            <div>
+                <h3 class="text-xl font-bold mb-4">sana</h3>
+                <p class="text-gray-400 text-sm">Network Engineer & Cyber Security Enthusiast. Passionate about building secure and scalable networks.</p>
+                <div class="flex gap-4 mt-4 text-gray-400">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="text-gray-400 space-y-2 text-sm">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div>
+                <div class="w-full h-32 bg-gray-700 rounded overflow-hidden">
+                    <div class="p-4 text-xs">Map Placeholder - Ahmedabad, India</div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-10 border-t border-gray-800 pt-5 text-sm text-gray-500">
+            © 2023 Sana lohia | Built with ❤️ in India
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
